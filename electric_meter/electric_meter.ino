@@ -5,11 +5,11 @@
 #include <Adafruit_GFX.h>
 
 // ===== WiFi =====
-const char* WIFI_SSID = "OP_2G";
-const char* WIFI_PASS = "12344321";
+const char* WIFI_SSID = "WIFI名称";
+const char* WIFI_PASS = "WIFI密码";
 
 // ===== 树莓派地址（改成你 Pi 的实际 IP）=====
-const char* PI_HOST = "192.168.1.153";
+const char* PI_HOST = "192.168.1.树莓派的IP";
 const int   PI_PORT = 8080;
 
 // ===== OLED 接线: SDA→D2(GPIO4), SCL→D1(GPIO5) =====
@@ -93,7 +93,7 @@ void fetchAndShow() {
 
   if (code != 200) {
     display.clearDisplay();
-    display.setCursor(0, 0);
+    display.setCursor(0， 0);
     display.print("HTTP ");
     display.print(code);
     display.display();

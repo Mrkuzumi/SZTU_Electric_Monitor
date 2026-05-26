@@ -118,11 +118,11 @@ Wants=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /home/mika/pi_server.py
+ExecStart=/usr/bin/python3 /你的pi_server.py放在哪里的绝对地址
 Restart=always
 RestartSec=30
-User=mika
-WorkingDirectory=/home/mika
+User=你的名字
+WorkingDirectory=/home/你的名字
 
 [Install]
 WantedBy=multi-user.target
